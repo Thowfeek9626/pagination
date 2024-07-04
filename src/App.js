@@ -24,7 +24,7 @@ function App() {
     fetchProducts()
   },[page])
   return (
-    <div>
+    <div className='container'>
       {products.length > 0 && <div className='products'>
         {products.map((prod)=>{
           return (<span className='products__single' key={prod.id}>
